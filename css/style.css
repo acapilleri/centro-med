@@ -1,0 +1,839 @@
+html {
+    height:100%;    
+}
+
+body{
+    min-height:100%; 
+    background-color: rgb(234,239,244);
+    color: #4c4a4a;
+    font-family: 'Raleway', "Open Sans", sans-serif;
+    font-weight:400;
+    padding:0;
+    margin:0;
+    border:0;
+    position: relative;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing:border-box;
+    outline: none;
+}
+
+ul{
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+}
+
+a:link,a:hover,a:active,a:visited {
+    text-decoration:none;
+    color:inherit;
+}
+
+.wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#main {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: rgba(83,136,199,0.95);
+    color: #fff;
+    border-bottom: 1px solid rgb(81, 114, 154);
+    padding: 8px 0;
+    text-align: center;
+    position: static;
+}
+
+#logo {
+    background-color: #fff;
+    display: block;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 140px;
+}
+
+#logo img,
+#logo a {
+    height: 58px;
+}
+
+#logo a {
+    display: block;
+}
+
+nav#menu, nav#menu li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav#menu li {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 10px;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+nav#menu li.active,
+nav#menu li:hover {
+    border-bottom: 4px solid #fff;
+}
+
+nav#menu li.active {
+    opacity: 1;
+}
+
+.mobile-nav {
+    display: block !important;
+    background-color: rgb(69, 108, 154);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    padding: 6px;
+    line-height: 27px;
+    text-align: center;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#main section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#main section > h1,
+#about-page #main section h1{
+    color: rgb(38,144,39);
+    font-size: 1.7em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#homepage #main section > h1::before,
+#homepage #main section > h1::after{
+    content: '~';
+    margin: 10px;
+}
+
+#welcome > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#welcome .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#welcome img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#welcome {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.treatments-box {
+    width: 100%;
+    display: block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.treatments-box > div {
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0 20px 60px 20px;
+    margin-right: 0;
+    overflow: hidden;
+    min-height: 300px;
+    position: relative;
+}
+
+.treatments-box:last-child > div {
+    margin-right: 0;
+}
+
+.treatments-box ul {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.treatments-box ul li::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 20px;
+    background-color: rgb(160, 204, 161);
+    margin: 2px 6px 2px 0;
+}
+
+.treatments-box .actions-container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.treatments-box .actions-container button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    background-color: rgb(83,136,199);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    min-width: 100px;
+    width: 100%;
+    max-width: 320px;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-family: 'raleway', sans-serif;
+}
+
+.treatments-box .actions-container button:hover {
+    background-color: rgb(113, 158, 212);
+}
+
+.treatments-box h2 {
+    color: rgb(38,144,39);
+    font-weight: bold;
+}
+
+#welcome .description-container {
+    text-align: center;
+}
+
+#welcome .description-container h1 {
+    color: rgb(38,144,39);
+    font-size: 2em;
+    font-weight: 200;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#welcome .description-container h2 {
+    font-weight: 500;
+}
+
+#welcome .description-container p {
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
+#sidebar {
+    display: block;
+    position: fixed;
+    top: 130px;
+    left: -260px;
+    color: #fff;
+    width: 300px;
+    overflow-x: visible;
+    overflow-y: auto;
+    z-index: 100;
+    opacity: 0.95;
+}
+
+#sidebar nav {
+    background-color: rgb(69, 108, 154);
+    border-radius: 0;
+    border-bottom-right-radius: 4px;
+    border: 1px solid rgb(63, 98, 140);
+    overflow-y: auto;
+    width: 260px;
+    padding: 10px;
+}
+
+#sidebar nav > ul > li > a,
+#sidebar nav > ul > li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#sidebar nav > ul > li > ul {
+    font-weight: 300;
+    text-transform: none;
+}
+
+#sidebar nav > ul > li a {
+    padding: 0 4px; 
+    border-radius: 2px;
+}
+
+#sidebar nav > ul li {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#sidebar nav > ul > li a.active,
+#sidebar nav > ul > li a.active:hover {
+    color: rgb(69, 108, 154);
+    background-color: rgba(255,255,255,0.8);
+}
+
+#sidebar nav > ul > li a:hover{
+    background-color: rgba(255,255,255,0.3);
+}
+
+#sidebar nav > ul > li {
+    margin-top: 10px;
+}
+
+#sidebar nav > ul > li:first-child {
+    margin-top: 0;
+}
+
+#sidebar ul > li > ul {
+    padding-left: 10px;
+    margin-top: 4px;
+}
+
+#focus-page #main section {
+    margin-left: 0;
+    position: relative;
+}
+
+#focus-page #main section h2 {
+    color: rgb(38,144,39);
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#focus-page #main article,
+#focus-page #intro,
+#googlemap-container {
+    text-align: left;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+#focus-page #main article,
+#focus-page #intro {
+    margin: 10px 10px;
+}
+
+#googlemap-container {
+    margin: 10px auto;
+}
+
+#googlemap-container iframe {
+    width: 100%;
+}
+
+#focus-page #intro {
+    margin-top: 0;
+}
+
+#focus-page article ul {
+    list-style: disc;
+    margin: inherit;
+    padding: inherit;
+}
+
+#focus-page #main article h3,
+#about-page #main section h2 {
+    color: rgb(38,144,39);
+    font-size: 1.8em;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.treatment-link {
+    position: absolute;
+    top: 0;
+    right: -2%;
+    margin-top: -85px;
+}
+
+.one-image-container {
+    position: relative;
+}
+
+.one-image-container {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+.one-image-container img {
+    width: 100%;
+}
+
+#about-page #main section {
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#about-page #main .image-container {
+    float: none;
+    margin-right: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 300px;
+}
+
+#about-page #main img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#about-page #main section h1:first-child {
+    margin-top: 0;
+}
+
+#about-page #main section ul {
+    list-style: disc inside;
+}
+
+#about-page #main .image-description {
+    margin-bottom: 10px;
+}
+
+#about-page #main .image-description p {
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 0.9em;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 10px;
+    color: #aaa;
+}
+
+#googlemap-container {
+    padding: 20px;
+    display: block;
+    margin: auto;
+    max-width: 440px;
+}
+
+.contacts {
+    margin-bottom: 40px;
+}
+
+#contact-page .contacts li {
+    display: inline-block;
+    margin: 10px;
+    font-weight: 700;
+    min-width: 200px;
+}
+
+#contact-page #main .contacts li span.fa {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: #fff;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 74px;
+    margin: 20px auto;
+    color: rgb(83,136,199);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(69, 108, 154);
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+}
+
+footer li {
+    opacity: 0.8;
+    display: block;
+    margin: 10px 0;
+}
+
+footer li:hover {
+    opacity: 1;
+}
+
+footer .flex-col {
+    padding: 10px;
+    text-align: left;
+}
+
+footer span.fa {
+    width: 32px;
+    height: 32px;
+    padding: 8px 6px 4px 6px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#footer-menu li {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#footer-menu li:after {
+    content: '';
+    padding: 0;
+}
+
+footer .contacts li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer #copyright p {
+    color: rgb(121, 157, 199);
+    margin: 0;
+}
+
+#iva {
+    display: block;
+}
+
+/* SLIDER */
+
+.slides-wrap {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0 13px 0;
+    background-color: #333;
+    text-align: center;
+}
+
+.slidesjs-pagination {
+    margin: 0 auto;
+}
+
+.slidesjs-pagination li {
+    display: inline-block;
+    margin: .5em .5em 0 0;
+}
+
+.slidesjs-pagination li:last-child {
+    margin-right: 0;
+}
+
+.slidesjs-pagination-item {
+    display: inline-block;
+    height: 80px;
+}
+
+.slidesjs-pagination-item img {
+    height: 100%;
+    opacity: 0.5;
+}
+
+.slidesjs-pagination-item .active img,
+.slidesjs-pagination-item:hover img {
+    opacity: 1;
+}
+
+.slidesjs-control img {
+    width: auto !important;
+    height: 100% !important;
+}
+
+div.slide-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-backface-visibility: hidden;
+}
+
+.descr div.slide-image::before,
+.one-image-container.descr::before {
+    content: 'Prima';
+    position: absolute;
+    left: 25%;
+    top: 0;
+    padding: 4px;
+    background-color: rgba(255,255,255,0.6);
+    color: #333;
+    font-size: 0.6em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.descr div.slide-image::after,
+.one-image-container.descr::after {
+    content: 'Dopo';
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+    padding: 4px;
+    background-color: rgba(255,255,255,0.6);
+    color: #333;
+    font-size: 0.6em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.descr div.slide-image[data-image-thumb="images/filler-solchi-naso-genieni-dottssa-renata-giglio-07.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/filler-solchi-naso-genieni-dottssa-renata-giglio-08.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/botox-zampe-gallina-dottssa-renata-giglio-11.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/botox-zampe-gallina-dottssa-renata-giglio-12.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/carbossiterapia-dottssa-renata-giglio-10.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/laser-co2-macchie-dottssa-renata-giglio-04.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/laser-co2-macchie-dottssa-renata-giglio-09.jpg"]::before,
+.descr div.slide-image[data-image-thumb="images/laser-co2-macchie-dottssa-renata-giglio-15.jpg"]::before {
+    left: 5.8%;
+}
+
+.descr div.slide-image[data-image-thumb="images/filler-solchi-naso-genieni-dottssa-renata-giglio-07.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/filler-solchi-naso-genieni-dottssa-renata-giglio-08.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/botox-zampe-gallina-dottssa-renata-giglio-11.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/botox-zampe-gallina-dottssa-renata-giglio-12.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/carbossiterapia-dottssa-renata-giglio-10.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/laser-co2-macchie-dottssa-renata-giglio-04.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/laser-co2-macchie-dottssa-renata-giglio-09.jpg"]::after,
+.descr div.slide-image[data-image-thumb="images/laser-co2-macchie-dottssa-renata-giglio-15.jpg"]::after {
+    right: 5.6%;
+}
+
+.one-image-container.descr::before {
+    left: 0;
+}
+
+.one-image-container.descr::after {
+    right: 0;
+    bottom: 3px;
+}
+
+/* MEDIA QUERY*/
+
+@media (min-width: 800px) {
+
+    .wrap {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .treatments-box {
+        width: 33.333%;
+        display: inline-block;
+        margin-right: -4px;
+        vertical-align: top;
+    }
+
+    .treatments-box > div {
+        margin-right: 10px;
+    }
+
+    nav#menu li {
+        margin-right: 30px;
+        margin-bottom: 0;
+        font-size: 1.1em;
+    }
+
+    #logo {
+        margin-right: 30px;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+
+    header {
+        text-align: left;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    header .wrap {
+        overflow: hidden;
+    }
+
+    .mobile-nav {
+        display: none !important;
+    }
+
+    #main {
+        margin-top: 75px;
+    }
+
+    #main section#welcome {
+        text-align: left;
+    }
+
+    #welcome .description-container {
+        text-align: left;
+        width: 50%;
+    }
+
+    #welcome .description-container h1 {
+        font-size: 2.8em;
+    }
+
+    #welcome .image-container {
+        padding-right: 20px;
+        display: inline-block;
+        width: 50%;
+        max-width: 340px;
+    }
+
+    .treatments-box .actions-container button {
+        max-width: 200px;
+    }
+
+    #focus-page #main article,
+    #focus-page #intro {
+        margin: 10px 10px;
+    }
+
+    #googlemap-container {
+        margin: 10px auto;
+    }
+
+    #sidebar {
+        display: block;
+        position: fixed;
+        top: 85px;
+        left: auto;
+        width: 260px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #sidebar nav {
+        border-radius: 4px;
+    }
+
+    #about-page #main .image-container {
+        float: left;
+        margin-right: 20px;
+    }
+
+    #focus-page #main section {
+        margin-left: 260px;
+    }
+
+    footer li {
+        display: inline-block;
+    }
+
+    #footer-menu li:after {
+        padding-left: 20px;
+        content: '~';
+        padding-right: 20px;
+    }
+
+    #footer-menu li:last-child:after {
+        content: '';
+        padding: 0;
+    }
+
+    footer .flex-col {
+        text-align: center;
+    }
+
+    footer .contacts li {
+        margin-left: 10px;
+        padding-left: 5px;
+    }
+
+    #iva {
+        display: inline-block;
+    }
+
+
+    #iva::before {
+        content: '-';
+        margin-right: 0.25em;
+    }
+
+    .descr div.slide-image::before,
+    .one-image-container.descr::before {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .descr div.slide-image::after,
+    .one-image-container.descr::after {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .wrap {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome .description-container h1 {
+        font-size: 3.4em;
+    }
+
+    #focus-page #main article,
+    #focus-page #intro {
+        margin: 10px 10px;
+    }
+
+    #googlemap-container {
+        margin: 10px auto;
+    }
+
+    footer li {
+        display: inline-block;
+    }
+    footer .flex-col {
+        text-align: center;
+    }
+
+}

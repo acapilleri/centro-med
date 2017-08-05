@@ -1,0 +1,1 @@
+ scp -r -P40  *  resca@109.74.196.116:~/apps/renata
